@@ -19,9 +19,28 @@
 
     }
 
+    .carousel {
+        max-height: 500;
+    }
+
+    @media screen and (max-width: 1000px) {
+        #header.header-front-page .bottom-header h1 {
+            font-size: 40px;
+        }
+    }
+
     body {
         background: rgb(2, 0, 36);
         background: linear-gradient(90deg, rgba(2, 0, 36, 1) 13%, rgba(31, 185, 207, 1) 32%, rgba(94, 115, 149, 1) 64%, rgba(10, 11, 163, 1) 100%);
+    }
+
+    h2 {
+        color: azure;
+    }
+
+    hr {
+        border-color: azure;
+        ;
     }
 
     .jumbotron {
@@ -31,6 +50,9 @@
 
     }
 
+    .navbar {
+        opacity: 0.9;
+    }
 
     #logo {
         margin: auto;
@@ -40,6 +62,10 @@
 
     .container {
         margin-bottom: 5%;
+    }
+
+    #nav-tabContent {
+        color: azure;
     }
 </style>
 
@@ -54,21 +80,54 @@
 
         <div class="container" id="Header">
 
-            <nav class="nav nav-tabs nav-stacked navbar-dark bg-dark">
-                <a class="nav-link " href="#Carousel">Carousel</a>
-                <a class="nav-link " href="#Dorpdown">Dropdown</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link disabled" href="#">Disabled link</a>
-                <a class="navbar-brand ml-auto" href="https://getbootstrap.com/">
-                    <img src="bootstrap.png" alt="Logo" id="logo">
-                </a>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand " href="https://getbootstrap.com/">
+                    <img src="bootstrap.png" alt="Logo" id="logo"></a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapse_target">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#Carousel">Carousel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#Dorpdown">Dropdown</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#Formular">Formular</a>
+
+
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#Buttons">Buttons</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="#Tabs">Tabs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#FlippyCard">FlippyCard</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link " href="#Tooltip">Tooltip example</a>
+                            </li>
+                    </ul>
+
+                </div>
+
             </nav>
         </div>
 
-        <div class="container">
+        <div class="container" id="Carousel">
 
             <div data-aos="zoom-in-up">
-                <h2 id="Carousel">Bootstrap Carousel</h2>
+                <h2>Bootstrap Carousel</h2>
+                <hr>
                 <div id="FirsCarousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#FirsCarousel" data-slide-to="0" class="active"></li>
@@ -83,7 +142,7 @@
                             <img class="d-block img-fluid" src="Winter2.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="Winter2.jpg" alt="Third slide">
+                            <img class="d-block img-fluid" src="motor.jpg" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#FirsCarousel" role="button" data-slide="prev">
@@ -96,40 +155,13 @@
                     </a>
                 </div>
             </div>
+
         </div>
 
 
-        <div class="container">
-            <div id="FirsCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#FirsCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#FirsCarousel" data-slide-to="1"></li>
-                    <li data-target="#FirsCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img class="d-block img-fluid" src="Winter1.jpg" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid" src="Winter2.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid" src="Winter2.jpg" alt="Third slide">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#FirsCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#FirsCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-
-        <div class="container">
-            <h2 id="Dorpdown">Bootstrap DropDown</h2>
+        <div class="container" id="Dorpdown">
+            <h2>Bootstrap DropDown</h2>
+            <hr>
             <div class="col text-center">
                 <div class="code code--small code--left col-md" data-aos="fade-up">
                     <p>
@@ -152,64 +184,235 @@
 
             </div>
         </div>
-        <div class="container">
-                <h2 id="Dorpdown">Bootstrap Formular</h2>
+
+        <div class="container" id="Formular">
+            <h2>Bootstrap Formular</h2>
+            <hr>
+            <div data-aos="fade-up-left">
                 <form>
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                          </div>
-                          <div class="form-group col-md-6">
+                    <div class="form-row">
+                        <div data-aos="fade-right">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
                             <label for="inputPassword4">Password</label>
                             <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                          </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right">
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                         </div>
                         <div class="form-group">
-                          <label for="inputAddress">Address</label>
-                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div data-aos="fade-right">
+                            <div class="form-row">
+
+                                <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+
+
+                                <div class="form-group col-md-4">
+                                    <div data-aos="fade-left">
+                                        <label for="inputState">State</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+
+                                    <label for="inputZip">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                            </div>
+
                         </div>
                         <div class="form-group">
-                          <label for="inputAddress2">Address 2</label>
-                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                        </div>
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
-                            <label for="inputCity">City</label>
-                            <input type="text" class="form-control" id="inputCity">
-                          </div>
-                          <div class="form-group col-md-4">
-                            <label for="inputState">State</label>
-                            <select id="inputState" class="form-control">
-                              <option selected>Choose...</option>
-                              <option>...</option>
-                            </select>
-                          </div>
-                          <div class="form-group col-md-2">
-                            <label for="inputZip">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                              Check me out
-                            </label>
-                          </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Sign in</button>
-                      </form>
-    
+                </form>
+            </div>
+
+        </div>
+
+        <div class="container" id="Buttons">
+            <h2>Button Examples</h2>
+            <hr>
+            <div data-aos="fade-left">
+                <div class="row justify-content-end">
+                    <div class="col-3">
+                        <button type="button" class="btn btn-primary">Primary</button>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <div class="row justify-content-end">
+                    <div class="col-5">
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <div class="row justify-content-end">
+                    <div class="col-7">
+                        <button type="button" class="btn btn-success">Success</button>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <div class="row justify-content-end">
+                    <div class="col-9">
+                        <button type="button" class="btn btn-danger">Danger</button>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <div class="row justify-content-end">
+                    <div class="col-11">
+                        <button type="button" class="btn btn-warning">Warning</button>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <div class="row justify-content-end">
+                    <div class="col-9">
+                        <button type="button" class="btn btn-info">Info</button>
+                    </div>
                 </div>
             </div>
 
+            <div data-aos="fade-left">
+                <div class="row justify-content-end">
+                    <div class="col-7">
+                        <button type="button" class="btn btn-light">Light</button>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <div class="row justify-content-end">
+                    <div class="col-5">
+                        <button type="button" class="btn btn-dark" style="opacity: 1;">Dark</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="container" id="Tabs">
+            <h2>Tab List Example</h2>
+            <hr>
+            <div class="row">
 
+                <div class="col-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                            href="#list-home" role="tab" aria-controls="home">Arnie</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                            href="#list-profile" role="tab" aria-controls="profile">Mr. Smith</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                            href="#list-messages" role="tab" aria-controls="messages">Kyle Reese</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                            href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                            aria-labelledby="list-home-list">“For me, life is about continuously being hungry. The
+                            meaning of life is not simply to exist, to survive, but to move ahead, to go up, to achieve,
+                            to conquer.”</div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                            aria-labelledby="list-profile-list">"I'd like to share a revelation I've had during my time
+                            here. It came to me when I tried to classify your species.
+                            I realized that you're not actually mammals. Every mammal on this planet instinctively
+                            develops a natural equilibrium with their surrounding environment, but you humans do not.
+                            You move to another area, and you multiply, and you multiply, until every natural resource
+                            is consumed. The only way you can survive is to spread to another area.
+                            There is another organism on this planet that follows the same pattern. Do you know what it
+                            is? A virus. Human beings are a disease, a cancer of this planet. You are a plague, and we
+                            are the cure."</div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                            aria-labelledby="list-messages-list">"Listen, and understand! That Terminator is out there!
+                            It can't be bargained with. It can't be reasoned with. It doesn't feel pity, or remorse, or
+                            fear! And it absolutely will not stop, ever, until you are dead!"</div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                            aria-labelledby="list-settings-list">"You see, there is only one constant. One universal. It
+                            is the only real truth. Causality. Action, reaction. Cause and effect."
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container" id="FlippyCard">
+            <h2>Card</h2>
+            <hr>
+            <div data-aos="flip-left">
+                <div class="card border" style="max-width: 18rem;background: none;margin: auto;">
+
+                    <div class="card-body text-light">
+                        <h5 class="card-title">Flippy Card</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="Tooltip">
+            <h2>Tooltip Example</h2>
+            <hr>
+            <button type="button" class="btn btn-success col-12"  data-toggle="tooltip"
+                data-placement="top" title="Nope...">
+                Can I taste your food?
+            </button>
+                <button type="button" class="btn btn-primary col-12"  data-toggle="tooltip"
+                    data-placement="top" title="100 million">
+                   How many playstation 4 was sold until today?
+                </button>
+                <button type="button" class="btn btn-warning col-12" data-toggle="tooltip"
+                    data-placement="top" title="Jap... Sadly...">
+                   Is Xbox One better than Playstation 4 pro?
+                </button>
+                <button type="button" class="btn btn-danger col-12"  data-toggle="tooltip"
+                    data-placement="top" title="I´ll tell you when you get older.">
+                   What was first, chicken or the egg?
+                </button>
+            
+        </div>
+
+        <div class="container" id="Audio">
+                <h2>Audio samples</h2>
+                <hr>
+                <iframe width="110" height="200" src="https://www.myinstants.com/instant/get-to-ze-choppa/embed/" frameborder="0" scrolling="no"></iframe>
+                <audio controls>
+                    <source src="surprise.mp3" type="audio/ogg">
+                </audio>
+
+            </div>
 
     </div>
+
+
     <footer>vadle</footer>
 
+    <script></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
