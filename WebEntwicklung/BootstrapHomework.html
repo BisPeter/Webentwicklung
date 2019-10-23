@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 </head>
 
 <style>
@@ -21,6 +22,103 @@
 
     .carousel {
         max-height: 500;
+    }
+
+    footer {
+        color: #fff;
+        background-attachment: fixed;
+        background-color: #222;
+        background-image: url(https://s7.postimg.org/uyf0oioaz/footer-bg.png);
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    footer p {
+        color: #ccc;
+    }
+
+    footer a {
+        color: #ccc;
+    }
+
+    .social-pet li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .social-pet li a {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        text-align: center;
+        display: block;
+        line-height: 35px;
+        background-color: #3a5a95;
+        color: #fff;
+    }
+
+    .social-pet li:nth-child(2) a {
+        background-color: #57aced;
+    }
+
+    .social-pet li:nth-child(3) a {
+        background-color: #dd4f43;
+    }
+
+    .social-pet li:nth-child(4) a {
+        background-color: #6b27b2;
+    }
+
+    .social-pet li a:hover {
+        background-color: #0141a2;
+    }
+
+    .social-pet li a:hover i {
+        transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+
+    .recent-post li {
+        display: block;
+        color: #ccc;
+        margin-bottom: 25px;
+    }
+
+    .recent-post li label {
+        float: left;
+        border: 2px solid #ccc;
+        padding: 1px 7px;
+        text-align: center;
+    }
+
+    .recent-post li label span {
+        color: #fff;
+    }
+
+    footer .input-group-addon {
+        background-color: #0141a2;
+        padding: 10px;
+    }
+
+    .f-address li {
+        display: inline-block;
+    }
+
+    .f-address li i {
+        color: #2995de;
+        font-size: 18px;
+    }
+
+    .f-address li a {
+        color: #ccc;
+    }
+
+    /*=-Copyright-=*/
+    .copyright {
+        background-color: #111;
+        padding: 12px 0;
+        font-size: 14px;
     }
 
     @media screen and (max-width: 1000px) {
@@ -40,14 +138,11 @@
 
     hr {
         border-color: azure;
-        ;
     }
 
     .jumbotron {
         background: steelblue;
         height: 10%;
-
-
     }
 
     .navbar {
@@ -57,7 +152,6 @@
     #logo {
         margin: auto;
         width: 50px;
-
     }
 
     .container {
@@ -114,8 +208,20 @@
                             <a class="nav-link " href="#FlippyCard">FlippyCard</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link " href="#Tooltip">Tooltip example</a>
-                            </li>
+                            <a class="nav-link " href="#Tooltip">Tooltip example</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#Figure">Figure example</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#spinner">Spinner example</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#Audio">Audio example</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#Table">Table example</a>
+                        </li>
                     </ul>
 
                 </div>
@@ -378,39 +484,251 @@
         <div class="container" id="Tooltip">
             <h2>Tooltip Example</h2>
             <hr>
-            <button type="button" class="btn btn-success col-12"  data-toggle="tooltip"
-                data-placement="top" title="Nope...">
+            <button type="button" class="btn btn-success col-12" data-toggle="tooltip" data-placement="top"
+                title="Nope...">
                 Can I taste your food?
             </button>
-                <button type="button" class="btn btn-primary col-12"  data-toggle="tooltip"
-                    data-placement="top" title="100 million">
-                   How many playstation 4 was sold until today?
-                </button>
-                <button type="button" class="btn btn-warning col-12" data-toggle="tooltip"
-                    data-placement="top" title="Jap... Sadly...">
-                   Is Xbox One better than Playstation 4 pro?
-                </button>
-                <button type="button" class="btn btn-danger col-12"  data-toggle="tooltip"
-                    data-placement="top" title="I´ll tell you when you get older.">
-                   What was first, chicken or the egg?
-                </button>
-            
+            <button type="button" class="btn btn-primary col-12" data-toggle="tooltip" data-placement="top"
+                title="100 million">
+                How many playstation 4 was sold until today?
+            </button>
+            <button type="button" class="btn btn-warning col-12" data-toggle="tooltip" data-placement="top"
+                title="Jap... Sadly...">
+                Is Xbox One better than Playstation 4 pro?
+            </button>
+            <button type="button" class="btn btn-danger col-12" data-toggle="tooltip" data-placement="top"
+                title="I´ll tell you when you get older.">
+                What was first, chicken or the egg?
+            </button>
+
         </div>
 
         <div class="container" id="Audio">
-                <h2>Audio samples</h2>
-                <hr>
-                <iframe width="110" height="200" src="https://www.myinstants.com/instant/get-to-ze-choppa/embed/" frameborder="0" scrolling="no"></iframe>
-                <audio controls>
-                    <source src="surprise.mp3" type="audio/ogg">
-                </audio>
+            <h2>Audio samples</h2>
+            <hr>
+            <iframe width="110" height="200" src="https://www.myinstants.com/instant/get-to-ze-choppa/embed/"
+                frameborder="0" scrolling="no"></iframe>
+            <audio controls>
+                <source src="surprise.mp3" type="audio/ogg">
+            </audio>
 
+        </div>
+
+        <div class="container" id="Table">
+            <h2>Table sample</h2>
+            <hr>
+            <table class="table table-sm table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container" id="Figure">
+            <h2>Figure sample</h2>
+            <hr>
+            <div class="row">
+                <div class="column">
+                    <figure class="figure">
+                        <img src="art1.jpg" class="figure-img img-fluid rounded col-4" alt="Art one">
+                        <figcaption class="figure-caption">Am I art?</figcaption>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure class="figure">
+                        <img src="art2.jpg" class="figure-img img-fluid rounded col-4 " alt="Art one">
+                        <figcaption class="figure-caption">Am I art?</figcaption>
+                    </figure>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="container" id="spinner">
+        <h2>Spinner sample</h2>
+        <hr>
+        <button class="btn-danger">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            Loading
+        </button>
+
+
+        <button type="submit" class="btn btn-success">
+            <div class="spinner-border text-secondary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            Eating
+        </button>
+
+        <button type="submit" class="btn btn-light">
+            <div class="spinner-border text-success" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            Counting
+        </button>
+
+
+        <button type="submit" class="btn btn-primary">
+            <div class="spinner-border text-danger" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            Watching
+        </button>
+
+        <button type="submit" class="btn btn-success">
+            <div class="spinner-border text-warning" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            Waiting
+        </button>
+
+        <button type="submit" class="btn btn-dark">
+            <div class="spinner-border text-info" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            Raining
+        </button>
+
+        <button type="submit" class="btn btn-info">
+            <div class="spinner-border text-light" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            Playing
+        </button>
+
+        <button type="submit" class="btn btn-success">
+            <div class="spinner-border text-dark" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            Singing
+        </button>
+    </div>
+
+
+    <div class="container">
+
+        <div class="card border" style="max-width: 48rem;margin: auto;">
+            <img src="sea.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
 
     </div>
 
 
-    <footer>vadle</footer>
+    <footer class="pt-5 pb-4" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                    <h5 class="mb-4 font-weight-bold">ABOUT US</h5>
+                    <p class="mb-4">Etiam laoreet in ex quis efficitur.</p>
+                    <ul class="f-address">
+                        <li>
+                            <div class="row">
+                                <div class="col-1"><i class="fas fa-map-marker"></i></div>
+                                <div class="col-10">
+                                    <h6 class="font-weight-bold mb-0">Address:</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-1"><i class="far fa-envelope"></i></div>
+                                <div class="col-10">
+                                    <h6 class="font-weight-bold mb-0">Have any questions?</h6>
+                                    <p><a href="#">Support@userthemes.com</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-1"><i class="fas fa-phone-volume"></i></div>
+                                <div class="col-10">
+                                    <h6 class="font-weight-bold mb-0">Address:</h6>
+                                    <p><a href="#">+XX (0) XX XX-XXXX-XXXX</a></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+               
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                    <h5 class="mb-4 font-weight-bold">LATEST UPDATES</h5>
+                    <ul class="recent-post">
+                        <li>
+                            <label class="mr-3">28 <br><span>APR</span></label>
+                            <span>Rendomised words </span>
+                        </li>
+                        <li>
+                            <label class="mr-3">29 <br><span>APR</span></label>
+                            <span>Rendomised words </span>
+                        </li>
+                        <li>
+                            <label class="mr-3">30 <br><span>APR</span></label>
+                            <span>Rendomised words </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                    <h5 class="mb-4 font-weight-bold">CONNECT WITH US</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Your Email Address">
+                        <span class="input-group-addon" id="basic-addon2"><i class="fas fa-check"></i></span>
+                    </div>
+                    <ul class="social-pet mt-4">
+                        <li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" title="google-plus"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright -->
+    <section class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="text-center text-white">
+                        &copy; 2019 Peter Solutions. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
 
     <script></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
