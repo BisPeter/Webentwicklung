@@ -19,7 +19,9 @@
 
 
     }
-
+#cardText{
+    color: #111;
+}
     .carousel {
         max-height: 500;
     }
@@ -129,29 +131,31 @@
 
     body {
         margin: 0;
-	width: 100%;
-	height: 100vh;
-	font-family: "Exo", sans-serif;
-	color: #fff;
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 1000% 1000%;
-	animation: gradientBG 15s ease infinite;
-
+        width: 100%;
+        height: 100vh;
+        font-family: "Exo", sans-serif;
+        color: #fff;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 1000% 1000%;
+        animation: gradientBG 15s ease infinite;
+        background-attachment: fixed;
 
 
     }
 
     @keyframes gradientBG {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
 
 
     h2 {
@@ -183,26 +187,27 @@
     #nav-tabContent {
         color: azure;
     }
-    #vid{
-       width: 100%;
-       
+
+    #vid {
+        width: 100%;
+
     }
 </style>
 
 <body>
 
-      
 
 
 
-       
 
-        
+
+
+
     <div class="container-fluid">
-            <video id="vid" autoplay loop muted="" >
-                <source src="b.mp4">
-                
-                <p class="warning">Your browser does not support HTML5 video.</p>
+        <video id="vid" autoplay loop muted="">
+            <source src="b.mp4">
+
+            <p class="warning">Your browser does not support HTML5 video.</p>
         </video>
 
         <div class="jumbotron">
@@ -522,39 +527,60 @@
         <div class="container" id="Tooltip">
             <h2>Tooltip Example</h2>
             <hr>
-            <button type="button" class="btn btn-success col-12" data-toggle="tooltip" data-placement="top"
-                title="Nope...">
-                Can I taste your food?
-            </button>
-            <button type="button" class="btn btn-primary col-12" data-toggle="tooltip" data-placement="top"
-                title="100 million">
-                How many playstation 4 was sold until today?
-            </button>
-            <button type="button" class="btn btn-warning col-12" data-toggle="tooltip" data-placement="top"
-                title="Jap... Sadly...">
-                Is Xbox One better than Playstation 4 pro?
-            </button>
-            <button type="button" class="btn btn-danger col-12" data-toggle="tooltip" data-placement="top"
-                title="I´ll tell you when you get older.">
-                What was first, chicken or the egg?
-            </button>
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <button type="button" class="btn btn-success col-12" data-toggle="tooltip" data-placement="top"
+                    title="Nope...">
+                    Can I taste your food?
+                </button>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <button type="button" class="btn btn-primary col-12" data-toggle="tooltip" data-placement="top"
+                    title="100 million">
+                    How many playstation 4 was sold until today?
+                </button>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <button type="button" class="btn btn-warning col-12" data-toggle="tooltip" data-placement="top"
+                    title="Jap... Sadly...">
+                    Is Xbox One better than Playstation 4 pro?
+                </button>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <button type="button" class="btn btn-danger col-12" data-toggle="tooltip" data-placement="top"
+                    title="I´ll tell you when you get older.">
+                    What was first, chicken or the egg?
+                </button>
+            </div>
+
+
+
 
         </div>
 
         <div class="container" id="Audio">
             <h2>Audio samples</h2>
             <hr>
-            <iframe width="110" height="200" src="https://www.myinstants.com/instant/get-to-ze-choppa/embed/"
-                frameborder="0" scrolling="no"></iframe>
-            <audio controls>
-                <source src="surprise.mp3" type="audio/ogg">
-            </audio>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+
+                <iframe width="110" height="200" src="https://www.myinstants.com/instant/get-to-ze-choppa/embed/"
+                    frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                <audio controls>
+                    <source src="surprise.mp3" type="audio/ogg">
+                </audio>
+            </div>
+
+
 
         </div>
 
         <div class="container" id="Table">
             <h2>Table sample</h2>
             <hr>
+            <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-center">
+
             <table class="table table-sm table-dark">
                 <thead>
                     <tr>
@@ -584,11 +610,13 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
         </div>
 
         <div class="container" id="Figure">
             <h2>Figure sample</h2>
             <hr>
+            <div data-aos="flip-left">
             <div class="row">
                 <div class="column">
                     <figure class="figure">
@@ -596,6 +624,8 @@
                         <figcaption class="figure-caption">Am I art?</figcaption>
                     </figure>
                 </div>
+            </div>
+            <div data-aos="flip-left">
                 <div class="column">
                     <figure class="figure">
                         <img src="art2.jpg" class="figure-img img-fluid rounded col-4 " alt="Art one">
@@ -603,11 +633,13 @@
                     </figure>
                 </div>
             </div>
+            </div>
         </div>
     </div>
     <div class="container" id="spinner">
         <h2>Spinner sample</h2>
         <hr>
+        <div data-aos="fade-up">
         <button class="btn-danger">
             <div class="spinner-border text-primary" role="status">
                 <span class="sr-only">Loading...</span>
@@ -665,19 +697,25 @@
             </div>
             Singing
         </button>
+        </div>
     </div>
 
 
     <div class="container">
-
+        <h2>Another Card Sample</h2>
+        <hr>
+        <div data-aos="fade-up">
         <div class="card border" style="max-width: 48rem;margin: auto;">
-            <img src="sea.jpg" class="card-img-top" alt="...">
+            
+            <img src="sea.jpg" class="card-img-top" alt="Sea">
+            
             <div class="card-body">
-                <p class="card-text-primary">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                <p  id="cardText" class="card-text-primary">
+                    Sorry fo the long page, here is a neice card.
+                </p>
             </div>
         </div>
-
+        </div>
     </div>
 
 
@@ -717,7 +755,7 @@
                         </li>
                     </ul>
                 </div>
-               
+
                 <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
                     <h5 class="mb-4 font-weight-bold">LATEST UPDATES</h5>
                     <ul class="recent-post">
