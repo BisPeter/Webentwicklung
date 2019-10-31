@@ -117,10 +117,6 @@ footer .input-group-addon {
     }
 }
 
-iframe {
-    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-}
-
 body {
     margin: 0;
     width: 100%;
