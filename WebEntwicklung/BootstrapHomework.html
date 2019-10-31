@@ -9,197 +9,17 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<style>
-    #Header {
-        position: sticky;
-        top: 0px;
-        z-index: 10;
 
-
-    }
-#cardText{
-    color: #111;
-}
-    .carousel {
-        max-height: 500;
-    }
-
-    footer {
-        color: #fff;
-        background-attachment: fixed;
-        background-color: #222;
-        background-image: url(https://s7.postimg.org/uyf0oioaz/footer-bg.png);
-        background-size: cover;
-        background-position: bottom;
-    }
-
-    footer p {
-        color: #ccc;
-    }
-
-    footer a {
-        color: #ccc;
-    }
-
-    .social-pet li {
-        display: inline-block;
-        margin-right: 10px;
-    }
-
-    .social-pet li a {
-        height: 35px;
-        width: 35px;
-        border-radius: 50%;
-        text-align: center;
-        display: block;
-        line-height: 35px;
-        background-color: #3a5a95;
-        color: #fff;
-    }
-
-    .social-pet li:nth-child(2) a {
-        background-color: #57aced;
-    }
-
-    .social-pet li:nth-child(3) a {
-        background-color: #dd4f43;
-    }
-
-    .social-pet li:nth-child(4) a {
-        background-color: #6b27b2;
-    }
-
-    .social-pet li a:hover {
-        background-color: #0141a2;
-    }
-
-    .social-pet li a:hover i {
-        transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-    }
-
-    .recent-post li {
-        display: block;
-        color: #ccc;
-        margin-bottom: 25px;
-    }
-
-    .recent-post li label {
-        float: left;
-        border: 2px solid #ccc;
-        padding: 1px 7px;
-        text-align: center;
-    }
-
-    .recent-post li label span {
-        color: #fff;
-    }
-
-    footer .input-group-addon {
-        background-color: #0141a2;
-        padding: 10px;
-    }
-
-    .f-address li {
-        display: inline-block;
-    }
-
-    .f-address li i {
-        color: #2995de;
-        font-size: 18px;
-    }
-
-    .f-address li a {
-        color: #ccc;
-    }
-
-    /*=-Copyright-=*/
-    .copyright {
-        background-color: #111;
-        padding: 12px 0;
-        font-size: 14px;
-    }
-
-    @media screen and (max-width: 1000px) {
-        #header.header-front-page .bottom-header h1 {
-            font-size: 40px;
-        }
-    }
-
-    body {
-        margin: 0;
-        width: 100%;
-        height: 100vh;
-        font-family: "Exo", sans-serif;
-        color: #fff;
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 1000% 1000%;
-        animation: gradientBG 15s ease infinite;
-        background-attachment: fixed;
-
-
-    }
-
-    @keyframes gradientBG {
-        0% {
-            background-position: 0% 50%;
-        }
-
-        50% {
-            background-position: 100% 50%;
-        }
-
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-
-
-    h2 {
-        color: azure;
-    }
-
-    hr {
-        border-color: azure;
-    }
-
-    .jumbotron {
-        background: steelblue;
-        height: 10%;
-    }
-
-    .navbar {
-        opacity: 0.9;
-    }
-
-    #logo {
-        margin: auto;
-        width: 50px;
-    }
-
-    .container {
-        margin-bottom: 5%;
-    }
-
-    #nav-tabContent {
-        color: azure;
-    }
-
-    #vid {
-        width: 100%;
-
-    }
-</style>
 
 <body>
 
 
 
 
-
+    
 
 
 
@@ -323,7 +143,7 @@
                     <div class="collapse" id="contentId">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Dx1zC_03K2M"
-                                frameborder="0"
+                                
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                         </div>
@@ -337,65 +157,68 @@
         <div class="container" id="Formular">
             <h2>Bootstrap Formular</h2>
             <hr>
-            <div data-aos="fade-up-left">
-                <form>
-                    <div class="form-row">
-                        <div data-aos="fade-right">
-                            <div class="form-group col-md-6">
-                                <label for="inputEmail4">Email</label>
-                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                            </div>
+
+            <form>
+                <div class="form-row">
+                    <div data-aos="fade-right">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
                         </div>
+
                         <div class="form-group col-md-6">
                             <label for="inputPassword4">Password</label>
                             <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
                         </div>
                     </div>
-                    <div data-aos="fade-right">
-                        <div class="form-group">
-                            <label for="inputAddress">Address</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div data-aos="fade-right">
+                    <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="Apartment, studio, or floor">
+                    </div>
+                </div>
+                <div data-aos="fade-right">
+                    <div class="form-row">
+
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity">
                         </div>
-                        <div class="form-group">
-                            <label for="inputAddress2">Address 2</label>
-                            <input type="text" class="form-control" id="inputAddress2"
-                                placeholder="Apartment, studio, or floor">
+
+
+                        <div class="form-group col-md-4">
+
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+
+
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
                         </div>
-                        <div data-aos="fade-right">
-                            <div class="form-row">
+                    </div>
 
-                                <div class="form-group col-md-6">
-                                    <label for="inputCity">City</label>
-                                    <input type="text" class="form-control" id="inputCity">
-                                </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Check me out
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
 
-
-                                <div class="form-group col-md-4">
-                                    <div data-aos="fade-left">
-                                        <label for="inputState">State</label>
-                                        <select id="inputState" class="form-control">
-                                            <option selected>Choose...</option>
-                                            <option>...</option>
-                                        </select>
-                                    </div>
-
-                                    <label for="inputZip">Zip</label>
-                                    <input type="text" class="form-control" id="inputZip">
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="form-group">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                    Check me out
-                                </label>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                </form>
-            </div>
 
         </div>
 
@@ -578,38 +401,37 @@
         <div class="container" id="Table">
             <h2>Table sample</h2>
             <hr>
-            <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-center">
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-center">
 
-            <table class="table table-sm table-dark">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
+                <table class="table table-sm table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
@@ -617,22 +439,22 @@
             <h2>Figure sample</h2>
             <hr>
             <div data-aos="flip-left">
-            <div class="row">
-                <div class="column">
-                    <figure class="figure">
-                        <img src="art1.jpg" class="figure-img img-fluid rounded col-4" alt="Art one">
-                        <figcaption class="figure-caption">Am I art?</figcaption>
-                    </figure>
+                <div class="row">
+                    <div class="column">
+                        <figure class="figure">
+                            <img src="art1.jpg" class="figure-img img-fluid rounded col-4" alt="Art one">
+                            <figcaption class="figure-caption">Am I art?</figcaption>
+                        </figure>
+                    </div>
                 </div>
-            </div>
-            <div data-aos="flip-left">
-                <div class="column">
-                    <figure class="figure">
-                        <img src="art2.jpg" class="figure-img img-fluid rounded col-4 " alt="Art one">
-                        <figcaption class="figure-caption">Am I art?</figcaption>
-                    </figure>
+                <div data-aos="flip-left">
+                    <div class="column">
+                        <figure class="figure">
+                            <img src="art2.jpg" class="figure-img img-fluid rounded col-4 " alt="Art one">
+                            <figcaption class="figure-caption">Am I art?</figcaption>
+                        </figure>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
@@ -640,63 +462,63 @@
         <h2>Spinner sample</h2>
         <hr>
         <div data-aos="fade-up">
-        <button class="btn-danger">
-            <div class="spinner-border text-primary" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-            Loading
-        </button>
+            <button class="btn-danger">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                Loading
+            </button>
 
 
-        <button type="submit" class="btn btn-success">
-            <div class="spinner-border text-secondary" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-            Eating
-        </button>
+            <button type="submit" class="btn btn-success">
+                <div class="spinner-border text-secondary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                Eating
+            </button>
 
-        <button type="submit" class="btn btn-light">
-            <div class="spinner-border text-success" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-            Counting
-        </button>
+            <button type="submit" class="btn btn-light">
+                <div class="spinner-border text-success" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                Counting
+            </button>
 
 
-        <button type="submit" class="btn btn-primary">
-            <div class="spinner-border text-danger" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-            Watching
-        </button>
+            <button type="submit" class="btn btn-primary">
+                <div class="spinner-border text-danger" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                Watching
+            </button>
 
-        <button type="submit" class="btn btn-success">
-            <div class="spinner-border text-warning" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-            Waiting
-        </button>
+            <button type="submit" class="btn btn-success">
+                <div class="spinner-border text-warning" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                Waiting
+            </button>
 
-        <button type="submit" class="btn btn-dark">
-            <div class="spinner-border text-info" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-            Raining
-        </button>
+            <button type="submit" class="btn btn-dark">
+                <div class="spinner-border text-info" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                Raining
+            </button>
 
-        <button type="submit" class="btn btn-info">
-            <div class="spinner-border text-light" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-            Playing
-        </button>
+            <button type="submit" class="btn btn-info">
+                <div class="spinner-border text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                Playing
+            </button>
 
-        <button type="submit" class="btn btn-success">
-            <div class="spinner-border text-dark" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-            Singing
-        </button>
+            <button type="submit" class="btn btn-success">
+                <div class="spinner-border text-dark" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                Singing
+            </button>
         </div>
     </div>
 
@@ -705,16 +527,16 @@
         <h2>Another Card Sample</h2>
         <hr>
         <div data-aos="fade-up">
-        <div class="card border" style="max-width: 48rem;margin: auto;">
-            
-            <img src="sea.jpg" class="card-img-top" alt="Sea">
-            
-            <div class="card-body">
-                <p  id="cardText" class="card-text-primary">
-                    Sorry fo the long page, here is a neice card.
-                </p>
+            <div class="card border" style="max-width: 48rem;margin: auto;">
+
+                <img src="sea.jpg" class="card-img-top" alt="Sea">
+
+                <div class="card-body">
+                    <p id="cardText" class="card-text-primary">
+                        Sorry fo the long page, here is a neice card.
+                    </p>
+                </div>
             </div>
-        </div>
         </div>
     </div>
 
